@@ -25,11 +25,10 @@ var spiralOrder = function(matrix) {
     
     for (const m of matrix) {
       let val = m.pop();
-      if (val) {
+      if (val !== undefined) {
         res.push(val);
         m.reverse();
         }
-        
       }
       matrix.reverse();
     }
