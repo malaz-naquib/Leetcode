@@ -18,17 +18,23 @@
 var countOdds = function(low, high) {
     // Get length of interval range
     let length = high - low + 1;
+    console.log(length);
 
     // Divide our length by 2, rounding down
     let count = Math.floor(length / 2);
+    console.log(count);
 
     // Check if length and low is odd. If so, increase count by 1
     if (length % 2 && low % 2) {
+        console.log(count);
         count++;
     }
 
+    console.log(count)
     return count;
 };
+
+console.log(countOdds(3, 7))
 
 // Time Complexity: O(1)
 // Space Complexity: O(1)
